@@ -13,14 +13,22 @@
         }
 
         header {
-            background-color: #dc143c;
+            background-color: #000000;
             color: #ffffff;
             padding: 20px 0;
             text-align: center;
+            display: flex;
+            align-items: center; /* alinha verticalmente ao centro */
+            gap: 20px; /* espaço entre a imagem e os textos */
+        }
+
+        header img {
+            width: 100px; /* você pode ajustar o tamanho conforme preferir */
+            height: auto;
         }
 
         nav {
-            background: #cee407;
+            background: #00aaff;
             padding: 10px;
             text-align: center;
         }
@@ -28,7 +36,9 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #ffffff;
+            font-weight: bold;
+
         }
 
         section {
@@ -52,8 +62,10 @@
 <body>
 
     <header>
+        <img src="iema-logo.jpg" alt="iema-logo">
         <h1>Feira de Ciências 2025</h1>
         <p>Bem-vindo ao nosso projeto informativo!</p>
+        
     </header>
 
     <nav>
