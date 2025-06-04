@@ -57,6 +57,43 @@
             margin: auto;
             padding: 0 20px;
         }
+
+        #conteudo {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            font-family: Arial, sans-serif;
+        }
+
+        #conteudo h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #conteudo p {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.03);
+        }
     </style>
 </head>
 <body>
@@ -78,17 +115,24 @@
     <div class="container">
         <section id="sobre">
             <h2>Sobre o Projeto</h2>
-            <p>Este site foi criado como parte da nossa apresentação para a Feira de Ciências. Nosso objetivo é informar sobre [tema do projeto, ex: energias renováveis, inteligência artificial, etc.].</p>
+            <p>Este site foi criado como parte da nossa apresentação para a Feira de Ciências. Nosso objetivo é informar sobre </p>
         </section>
 
         <section id="conteudo">
             <h2>Conteúdo Científico</h2>
-            <p>Explicações, imagens, vídeos ou experimentos sobre o tema vão aqui.</p>
+            <p></p>
+            <div class="galeria">
+                <img src="foto2.jpeg" alt="foto2">
+                <img src="foto3.jpeg" alt="foto3">
+                <img src="foto4.jpeg" alt="foto4">
+                <img src="foto5.jpeg" alt="foto5">
+                <img src="foto6.jpeg" alt="foto6">
+            </div>
         </section>
 
         <section id="equipe">
             <h2>Nossa Equipe</h2>
-            <p>Alunos responsáveis: Gleydson David Silva e Kauã Silva Moura!.</p>
+            <p>Alunos responsáveis: Gleydson David Silva, Kauã Silva Moura, Ricardo Silva Araujo e Estevão Jefte.</p>
             <p>Orientador: Prof. Vinnycios.</p>
         </section>
 
